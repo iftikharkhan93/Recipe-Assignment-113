@@ -11,7 +11,6 @@
     color: #fff;
 }
 
-
 .home p {
     margin: 0;
     font-size: 18px;
@@ -38,7 +37,7 @@
 }
 
 .home-tags {
-    display: inline;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Fira Sans", sans-serif;
@@ -46,7 +45,7 @@
 }
 
 .home-child-tags {
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -65,4 +64,86 @@
 .home-child-tags p span {
     text-decoration: underline;
     text-decoration-style: dotted;
+}
+
+
+
+/* nav bar */
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #232028;
+    list-style-type: none;
+}
+
+
+.menu ul li a {
+    
+    font-size: 22px;
+    font-weight: 800;
+    font-family: "Fira Sans", sans-serif;
+    text-transform: capitalize;
+    
+}
+
+ /* main content */
+.right-section-content {
+    padding: 0 20px;
+}
+
+.right-section-content h2 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 800;
+}
+
+
+.quote {
+    
+    padding-left: 20px;
+}
+
+
+
+
+/* for responsive screen */
+@media only screen and (max-width: 1100px) {
+    .home {
+        padding: 20px 20px;
+    }
+    .home h1 {
+        font-size: 34px;
+    }
+    .home p {
+        font-size: 12px;
+    }
+    .home-tags {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .home-tags .home-child-tags {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0;
+    }
+    .home-tags .home-child-tags p {
+        margin-left: 10px;
+        padding: 3px 10px;
+    }
+   
+    .menu ul {
+        flex-direction: column;
+        justify-content: start;
+        align-items: unset;
+        padding-left: 20px;
+    }
+    .menu ul li a {
+        font-size: 18px;
+    }
+   
+   
 }
