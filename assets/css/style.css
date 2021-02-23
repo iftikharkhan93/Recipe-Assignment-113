@@ -1,0 +1,64 @@
+.home {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/ingredients-960w.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 150px;
+    color: #fff;
+}
+
+
+.home p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.home h1 {
+    margin: 10px 0 20px;
+    font-size: 72px;
+    line-height: 1em;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.tag {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.tag p {
+    color: #353a42;
+    background-color: var(--yellow);
+    font-weight: 700;
+    padding: 0px 10px;
+}
+
+.home-tags {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 20px;
+}
+
+.home-child-tags {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.home-child-tags h3 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.home-child-tags p {
+    color: #353a42;
+    font-weight: 800;
+    background-color: var(--yellow);
+}
+
+.home-child-tags p span {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
