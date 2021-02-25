@@ -95,6 +95,17 @@ html{
     
 }
 
+.menu ul li a:hover {
+    
+    
+    font-family: "Fira Sans", sans-serif;
+    text-transform: capitalize;
+    background: var(--yellow);
+    color: black;
+  transition: 0.6s
+
+    
+}
  /* main content */
 .right-section-content {
     padding: 0 20px;
