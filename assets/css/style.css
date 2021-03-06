@@ -164,11 +164,13 @@ a:hover {
     padding: 0 20px;
 }
 
-.h2-heading{
+.h2-heading,
+.p-content
+{
     padding-left: 10px;
 }
 
-.para-content{
+{
     padding-left: 10px;
 }
 
@@ -219,6 +221,8 @@ blockquote{
     padding-left: 20px;
     font-style: italic;
 }
+
+
 
 .left-section-content {
     padding: 30px 15px 30px 30px;
