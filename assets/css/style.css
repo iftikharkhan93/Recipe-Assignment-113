@@ -51,11 +51,8 @@ a:hover {
 .bg-lightgray {
     background-color: #efefef;
 }
-    
 
-
-/* Home Section */
-
+/* -----------home section--------- */
 
 .home {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/ingredients-960w.jpg);
@@ -86,6 +83,7 @@ a:hover {
 
 .tag p {
     color: #353a42;
+    background-color: var(--yellow);
     font-weight: 700;
     padding: 0px 10px;
 }
@@ -112,6 +110,7 @@ a:hover {
 .home-child-tags p {
     color: #353a42;
     font-weight: 800;
+    background-color: var(--yellow);
 }
 
 .home-child-tags p span {
@@ -119,10 +118,11 @@ a:hover {
     text-decoration-style: dotted;
 }
 
-
 .left-section-content.mobile{
-    display: none; /*-------------   did not copy */
+    display: none;
 }
+
+/* About */
 
 .about {
     padding: 0 150px;
@@ -140,44 +140,36 @@ a:hover {
     background: #fff;
 }
 
-
-
-
-/* nav bar */
-
 .menu ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 15px 0;
     background-color: #232028;
-    list-style-type: none;
 }
 
+/* nav bar  */
 
 .menu ul li a {
-    
+    color: var(--yellow);
     font-size: 22px;
     font-weight: 800;
     font-family: "Fira Sans", sans-serif;
     text-transform: capitalize;
-    
 }
 
-.menu ul li a:hover {
-    
-    
-    font-family: "Fira Sans", sans-serif;
-    text-transform: capitalize;
-    background: var(--yellow);
-    color: black;
-  transition: 0.6s
+/* main ::content */
 
-    
-}
- /* main content */
 .right-section-content {
     padding: 0 20px;
+}
+
+.h2-heading{
+    padding-left: 10px;
+}
+
+.para-content{
+    padding-left: 10px;
 }
 
 .right-section-content h2 {
@@ -185,6 +177,35 @@ a:hover {
     font-weight: 800;
 }
 
+.right-section-body img {
+    width: 100%;
+}
+
+.right-section-body ul li {
+    padding-left: 10px;
+}
+
+.right-section-body ul li h2 span {
+    font-size: 15px;
+}
+.table-container {
+    overflow-x: auto;
+}
+.right-section-body table {
+    width: 100%;
+}
+.right-section-body table,
+td,
+th {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+.right-section-body table thead td {
+    font-weight: 700;
+}
 
 /* .quote {
     border-left: 4px solid #ffbc48;
@@ -196,9 +217,240 @@ blockquote{
     border-left: 5px solid var(--yellow);
     /* border-left: 5px solid var(--black); */
     padding-left: 20px;
-    font-style: italic; 
+    font-style: italic;
+}
+
+.left-section-content {
+    padding: 30px 15px 30px 30px;
+}
+
+.left-section-content h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 900;
+}
+
+.left-section-content ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 100px;
+}
+
+.left-section-content ul li {
+    font-size: 18px;
+    padding: 3px 0;
+}
+
+.left-section-content ul li span {
+    font-weight: 700;
+}
+
+
+ /* footer */
+
+.footer {
+    padding: 20px;
+    color: #fff;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a {
+    color: var(--yellow);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.footer .footer-right {
+    display: flex;
+}
+
+.footer .footer-right a {
+    margin: 0 5px;
+}
+
+.footer .footer-right a i {
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+    padding: 10px;
+    color: #353a42;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* /* switch button for grams and lbs */
+
+.switch-button {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 35px;
+    text-align: center;
+    will-change: transform;
+    z-index: 197 !important;
+    color: gray;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    border-radius: 100px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    box-shadow: 0 0 8px -2px rgb(0 0 0 / 10%), inset 0 0 10px 0px rgb(0 0 0 / 20%);
+}
+
+.switch-button-case {
+    display: inline-block;
+    background: none;
+    height: 100%;
+    color: gray;
+    position: relative;
+    border: none;
+    transition: 0.3s ease all;
+    text-transform: lowercase;
+    padding-bottom: 1px;
+    font-weight: 900;
+    font-family: 'Fira Sans';
+    font-size: 16px;
+}
+
+.switch-button-case:hover {
+    color: rgb(59, 59, 0);
+    cursor: pointer;
+}
+
+.switch-button-case:focus {
+    outline: none;
+}
+
+.switch-button .active {
+    color: #151515;
+    background-color: var(--yellow);
+    border: 2px solid black;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.3s ease-out all;
+    border-radius: 100px;
+}
+
+.switch-button .active-case {
+    color: #151515;
+    background-color: var(--yellow);
+    border: 3px solid #151515;
+    border-radius: 50px;
+    box-shadow: -2px 0 8px rgb(0 0 0 / 20%);
+}
+
+/* --------------image sliders------------ */
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
 }
 
 
 
+ul.slides input {
+    display: none;
+}
 
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-color: white;
+    opacity: 0.8;
+    margin: 10px;
+}
+
+
+#img-dot-1{
+    background-color: var(--yellow);
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1100px) {
+    .home {
+        padding: 20px 20px;
+    }
+    .home h1 {
+        font-size: 34px;
+    }
+    .home p {
+        font-size: 12px;
+    }
+    .home-tags {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .home-tags .home-child-tags {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0;
+    }
+    .home-tags .home-child-tags p {
+        margin-left: 10px;
+        padding: 3px 10px;
+    }
+    .left-section {
+        display: none;
+    }
+    .about .right-section {
+        width: 100%;
+    }
+    .about {
+        padding: 0px;
+    }
+    .menu ul {
+        flex-direction: column;
+        justify-content: start;
+        align-items: unset;
+        padding-left: 20px;
+    }
+    .menu ul li a {
+        font-size: 18px;
+    }
+    ul.slides {
+        height: 250px;
+    }
+    .carousel-dots .carousel-dot {
+        width: 15px;
+        height: 15px;
+    }
+    .left-section-content ul {
+        margin-bottom: 20px;
+    }
+    .left-section-content.mobile{
+        display: block;
+    }
+}
