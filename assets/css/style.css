@@ -170,10 +170,6 @@ a:hover {
     padding-left: 10px;
 }
 
-{
-    padding-left: 10px;
-}
-
 .right-section-content h2 {
     font-family: "Fira Sans", sans-serif;
     font-weight: 800;
@@ -192,10 +188,24 @@ a:hover {
 }
 .table-container {
     overflow-x: auto;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .right-section-body table {
     width: 100%;
 }
+
+
+.right-section-list{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.results{
+    padding-left: 10px;
+    padding-right: 10px;
+}   
+
 .right-section-body table,
 td,
 th {
@@ -203,6 +213,7 @@ th {
     border-collapse: collapse;
     padding: 10px;
     text-align: center;
+    
 }
 
 .right-section-body table thead td {
@@ -391,12 +402,15 @@ ul.slides input {
     background-color: white;
     opacity: 0.8;
     margin: 10px;
+    cursor: pointer;
 }
 
 
 #img-dot-1{
     background-color: var(--yellow);
 }
+
+
 
 
 /* Responsive */
